@@ -16,7 +16,7 @@ else:
     else:
         for barcode in barcodes:
             data = barcode.data.decode("utf-8")
-            print(f"Barcode Data: {data}")
+            print(f"Barcode Data: {data}");
 
             points = barcode.polygon
             points = [(point.x, point.y) for point in points]
